@@ -1,20 +1,30 @@
-## Run instructions
-From project root directory (API_WRAPPER), run:
-docker-compose up -d
+# Full-Stack Engineer: Line-Up Coding Exercise - David Okeke
+<br>
 
-## Manual run instructions
+## Build + Run via docker-compose:
 
-# from /backend directory, run:
+### From project root directory api_wrapper, execute:
+docker-compose up -d  
+<br>
+
+## Build + Run Manually:
+
+### Inside /backend directory, execute:
 docker build -t backend-api .
 docker run -d --name backend-api -p 8001:8001 backend-api
 
-# from /frontend directory, run:
+### Inside /frontend directory, execute:
 docker build -t frontend-app .
-docker run -d --name frontend-app -p 3001:3001 frontend-app
+docker run -d --name frontend-app -p 3001:3001 frontend-app  
+<br>
 
-# On OSX / Linux / Windows with make (admin@powershell: choco install make)
+## Using make On OSX / Linux / Windows (admin@powershell: choco install make):
 
-# from API_WRAPPER root directory run:
+### Inside /backend directory, execute:
 make
 
-# To access the app, navigate to http://localhost:3001/USER_ID replacing USER_ID with the desired integer User ID
+### Inside /frontend directory, execute:
+make
+<br>
+
+## To access the app, navigate to http://localhost:3001/USER_ID replacing USER_ID with the desired User ID
