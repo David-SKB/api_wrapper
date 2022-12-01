@@ -28,3 +28,7 @@ make
 <br>
 
 ## To access the app, navigate to http://localhost:3001/USER_ID replacing USER_ID with the desired User ID
+<br>
+<br>
+example
+![image](https://user-images.githubusercontent.com/41873522/205165734-2e63f1e4-1de4-4ba6-a424-86d31be35ee4.png)
