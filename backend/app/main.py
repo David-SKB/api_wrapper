@@ -5,9 +5,8 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-# I have other stuff running so hence including port 3001
+# I have other stuff running on port 3000 hence including port 3001
 origins = [
-    "http://localhost",
     "http://localhost:3000",
     "http://localhost:3001",
     "http://127.0.0.1:3001",
@@ -20,7 +19,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
+# Connection test
 @app.get("/")
 def read_root():
     return {"connection": "successful"}

@@ -37,8 +37,8 @@ function App() {
   const [dataLoaded, setDataLoaded] = useState(false);
   const [userData, setUserData] = useState([]);
   // Debug
-  console.log("URL PARAMS: " + JSON.stringify(urlParams));
-  console.log("USER ID: " + userId);
+  console.log("[APP] URL PARAMS: " + JSON.stringify(urlParams));
+  console.log("[APP] USER ID: " + userId);
 
   // Retrieve user information from API on component load
   useEffect(() => {
@@ -46,7 +46,7 @@ function App() {
     getUser(userId).then((response) => {
       setUserData(response);
       setDataLoaded(true);
-      console.log("USER DATA: " + JSON.stringify(response));
+      console.log("[APP] USER DATA: " + JSON.stringify(response));
     });
   }, []);
 
