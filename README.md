@@ -1,4 +1,4 @@
-# Full-Stack Engineer: Line-Up Coding Exercise - David Okeke
+# API Wrapper - David Okeke
 <br>
 git clone https://github.com/David-SKB/api_wrapper.git
 
